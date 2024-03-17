@@ -17,6 +17,7 @@ public class SimpleRandomGenetation : AbstractDungeonGenerator
     {
         HashSet<Vector3Int> floorPosition = RunRandomWalk();
         vizualizer.CreateFloorObjects(floorPosition);
+        vizualizer.CreateWallsObject(floorPosition);
     }
 
     private HashSet<Vector3Int> RunRandomWalk()

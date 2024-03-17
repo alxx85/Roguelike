@@ -34,4 +34,9 @@ public static class Direction3D
     {
         return DirectionList[Random.Range(0, DirectionList.Count)];
     }
+
+    public static IEnumerable<Vector3Int> GetDirectionList()
+    {
+        return DirectionList;
+    }
 }
